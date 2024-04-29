@@ -10,6 +10,11 @@
     items-center justify-between
 }
 
+main {
+  @apply 
+  bg-gradient-to-r from-blue-300 to-white
+}
+
 nav ul {
   list-style: none;
   color: white;
@@ -22,18 +27,52 @@ nav ul {
           rounded-full hover:bg-blue-400
 }
 
-main > section {
-  @apply grid grid-cols-2 gap-20
+#top-section {
+  @apply grid grid-cols-2 gap-36
          px-24 py-8
-         bg-gradient-to-r from-blue-300 to-white
 }
 h1{
-  @apply font-bold text-4xl
+  @apply font-black text-4xl
 }
+
 section > div > h1,p {
-  @apply text-primary my-4
+  @apply text-primary mb-4
 }
 
 iframe {
   @apply w-full h-full rounded-md
+}
+
+.primary-btn {
+  @apply rounded-full bg-primary text-white px-8 py-3 text-xl
+}
+
+#banner1 {
+  @apply bg-primary  mx-24
+  flex flex-row justify-evenly
+  items-center
+}
+
+#banner1 > p {
+  @apply text-white my-8
+}
+
+#banner1 > button {
+  @apply px-8 py-3 bg-yellow-300 text-white rounded-full
+}
+
+#banner2 {
+  @apply bg-primary flex flex-row
+  mx-24 rounded-s-full my-6 justify-evenly
+  px-2
+}
+#banner2 > div {
+  @apply my-6 inline-flex flex-col
+}
+
+h4 {
+  @apply text-xl
+}
+#banner2 > div > h4, #banner2 > div > small{
+  @apply text-center text-gray-300
 }
