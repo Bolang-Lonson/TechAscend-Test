@@ -76,3 +76,15 @@ h4 {
 #banner2 > div > h4, #banner2 > div > small{
   @apply text-center text-gray-300
 }
+
+.card-grid {
+  @apply grid grid-cols-4 gap-4 px-24 my-6
+}
+
+.card {
+  @apply bg-slate-50 rounded-md flex flex-col
+}
+
+.card-img {
+  @apply w-full rounded-t-md h-64 object-cover
+}

@@ -1,4 +1,8 @@
 import Image from "next/image";
+import image1 from "./components/card-img1.webp"
+import image2 from "./components/card-img2.webp"
+import image3 from "./components/card-img3.webp"
+import image4 from "./components/card-img4.webp"
 
 export default function Home() {
   return (
@@ -44,6 +48,67 @@ export default function Home() {
           </div>
         </div>
         <h1 className="text-primary text-center mt-10">Our Services</h1>
+        <div className="card-grid">
+          <div className="card shadow-lg">
+            <Image
+              src={image1}
+              alt="Ascend Talks"
+              className="card-img"
+              loading="lazy"
+            />
+            <div className="p-4">
+              <h3 className="font-bold text-lg mb-2">Ascend Talks</h3>
+              <p class="text-gray-600 text-sm">Gain insights from industry experts and stay ahead in the tech world.</p>
+              <a href="#" class="text-primary hover:text-blue-500 font-bold transition-colors mt-4 inline-flex items-center">See More →</a>
+            </div>
+          </div>
+          <div className="card shadow-lg">
+            <Image
+              src={image2}
+              alt="Skill Workshops"
+              className="card-img"
+              loading="lazy"
+            />
+            <div className="p-4">
+              <h3 className="font-bold text-lg mb-2">Skill Workshops</h3>
+              <p class="text-gray-600 text-sm">Hands-on workshops to enhance your skills and knowledge.</p>
+              <a href="#" class="text-primary hover:text-blue-500 font-bold transition-colors mt-4 inline-flex items-center">See More →</a>
+            </div>
+          </div>
+          <div className="card shadow-lg">
+            <Image
+              src={image3}
+              alt="Networking Events"
+              className="card-img"
+              loading="lazy"
+            />
+            <div className="p-4">
+              <h3 className="font-bold text-lg mb-2">Networking Events</h3>
+              <p class="text-gray-600 text-sm">Connect with fellow developers and expand your professional network.</p>
+              <a href="#" class="text-primary hover:text-blue-500 font-bold transition-colors mt-4 inline-flex items-center">See More →</a>
+            </div>
+          </div>
+          <div className="card shadow-lg">
+            <Image
+              src={image4}
+              alt="Mentorship Program"
+              className="card-img"
+              loading="lazy"
+            />
+            <div className="p-4">
+              <h3 className="font-bold text-lg mb-2">Mentorship Program</h3>
+              <p class="text-gray-600 text-sm">Get guidance from experienced mentors in the tech industry.</p>
+              <a href="#" class="text-primary hover:text-blue-500 font-bold transition-colors mt-4 inline-flex items-center">See More →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="px-64 py-8">
+        <h1 className="text-center font-black text-primary">Join the TechAscend Community</h1>
+        <div className="card p-6 my-6">
+          <p className="text-xl">TechAscend strives to ascend to new heights as a leading technology company by leveraging innovation, fostering a sense of community, empowering individuals, and upholding a commitment to excellence. Our objective is to pioneer groundbreaking solutions, create a collaborative and inclusive community, empower individuals to reach their full potential, and consistently deliver excellence in all aspects of our business. Through these core values, we aim to make a positive impact on the tech industry and contribute to the advancement of society as a whole</p>
+        </div>
+        <button className="bg-yellow-400 text-white px-8 py-4 rounded-full block mx-auto">Join The Community</button>
       </section>
     </main>
   );
