@@ -22,8 +22,8 @@ export default function Navbar() {
 				<li>Programs</li>
 				<li>Career Readiness</li>
 				<li>About Us</li>
-				<li>Contact Us</li>
-				<li>Get Started</li>
+				<li><Link href='/contact-us'>Contact Us</Link></li>
+				<li><button className="nav-btn">Get Started</button></li>
 				<li>Login</li>
 			</ul>
 
